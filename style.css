@@ -1,0 +1,79 @@
+.resume-header {
+    list-style: none; /* Removes bullet points */
+}
+
+.first-container {
+    display: flex;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.courses {
+    flex-wrap: wrap;
+}
+
+.more-skills{
+    margin-top: 1px;
+}
+
+.gpa {
+    margin-top: -16px;
+}
+
+.bachelor {
+    margin-bottom: 0px;
+}
+
+.minor, .location {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 992px) { /* Laptop screens and higher */
+    .first-container {
+        justify-content: center;
+    }
+    
+    .courses {
+        width: 50% /* To prevent courses from going across entire width */
+    }
+
+    .dates{
+        float: right;
+        padding-right: 100px;
+    }
+
+    .container {
+        padding-left: 100px;
+    }
+
+    .job-title, .GPA { /* Allows the job titles to go on a new line on laptops or bigger screen sizes. */
+        display: block;
+    }
+
+    .community-college {
+        margin-top: -16px;
+        display: block;
+    }
+}
+
+@media (max-width: 991px) { /* Mobile friendly layout */
+    .resume-header {
+        padding-left: 0px;
+    }
+
+    .dates{
+        display: block;
+    }
+
+    .AA {
+        margin-bottom: -16px;
+    }
+}
